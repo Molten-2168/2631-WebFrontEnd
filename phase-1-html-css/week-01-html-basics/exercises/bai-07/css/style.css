@@ -1,0 +1,83 @@
+/* 1. Căn toàn bộ khối form ra chính giữa màn hình */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* 2. Khung thẻ bao ngoài */
+.contact-card {
+    width: 360px;
+    background-color: #f7f7f7;
+    /* Màu nền xám nhạt như hình */
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+}
+
+/* 3. Khung header màu xanh */
+.contact-header {
+    background-color: #00cba9;
+    /* Màu xanh ngọc (teal) chuẩn trong ảnh */
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 0;
+}
+
+.contact-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* 4. Thân form chứa các ô nhập */
+.contact-body {
+    padding: 22px 18px 24px 18px;
+}
+
+.form-control {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px 12px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    font-size: 14px;
+    outline: none;
+    background-color: #ffffff;
+    font-family: inherit;
+}
+
+.form-control::placeholder {
+    color: #555555;
+}
+
+.form-control:focus {
+    border-color: #00cba9;
+}
+
+textarea.form-control {
+    height: 65px;
+    resize: vertical;
+}
+
+/* 5. Nút Send full width */
+.btn-send {
+    width: 100%;
+    background-color: #00cba9;
+    color: #ffffff;
+    border: none;
+    padding: 11px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 1px;
+    transition: background-color 0.2s;
+}
+
+.btn-send:hover {
+    background-color: #00b395;
+}

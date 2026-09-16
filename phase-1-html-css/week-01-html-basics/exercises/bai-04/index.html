@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+
+<body>
+    <!--<label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    -->
+    <div>
+        <select name="cars_single">
+            <optgroup label="Sports cars">
+                <option value="ferrari">Ferrari</option>
+                <option value="lamborghini">Lamborghini</option>
+            </optgroup>
+            <optgroup label="Luxury cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="bentley">Bentley</option>
+            </optgroup>
+        </select>
+    </div><br>
+
+    <div>
+        <select name="cars_multiple" multiple>
+            <optgroup label="Sports cars">
+                <option value="ferrari">Ferrari</option>
+                <option value="lamborghini">Lamborghini</option>
+            </optgroup>
+            <optgroup label="Luxury cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="bentley">Bentley</option>
+            </optgroup>
+        </select>
+        <p>
+            <small><b>Note:</b> Press control or shift key on the keyboard while clicking on the other options to enable
+                multiple selections.</small>
+        </p>
+    </div><br>
+
+    <div>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+        </fieldset>
+
+    </div>
+    <br>
+
+    <div>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+    </div>
+    <br>
+
+</body>
+
+</html>

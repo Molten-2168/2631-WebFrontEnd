@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <table>
+            <!-- 1. Title -->
+            <tr>
+                <td><label for="title">Title</label></td>
+                <td>
+                    <select id="title" name="title">
+                        <option value="mr">Mister</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="miss">Miss</option>
+                        <option value="ms">Ms</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- 2. Name -->
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+
+            <!-- 3. Phone number -->
+            <tr>
+                <td><label for="phone">Phone number</label></td>
+                <td>
+                    <input type="tel" id="phone" name="phone">
+                    <small>(optional)</small>
+                </td>
+            </tr>
+
+            <!-- 4. Email address -->
+            <tr>
+                <td><label for="email">Email address</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <!-- 5. Your website -->
+            <tr>
+                <td><label for="website">Your website</label></td>
+                <td>
+                    <input type="url" id="website" name="website" placeholder="www.yoursite.com">
+                    <small>(optional)</small>
+                </td>
+            </tr>
+
+            <!-- 6. Number of items -->
+            <tr>
+                <td><label for="items">Nr. of items to order</label></td>
+                <td>
+                    <input type="number" id="items" name="items" min="1" max="10" value="1">
+                    <small>(1-10)</small>
+                </td>
+            </tr>
+
+            <!-- 7. Length -->
+            <tr>
+                <td><label for="length">Length</label></td>
+                <td>
+                    <input type="number" id="length" name="length" min="1" step="0.1" value="1">
+                    <small>1m (in 10cm increments)</small>
+                </td>
+            </tr>
+
+            <!-- 8. Delivery date -->
+            <tr>
+                <td><label for="delivery_date">Delivery date</label></td>
+                <td>
+                    <input type="date" id="delivery_date" name="delivery_date" min="2010-12-16">
+                    <small>(minimum 16 December 2010)</small>
+                </td>
+            </tr>
+
+            <!-- 9. Time of delivery -->
+            <tr>
+                <td><label for="delivery_time">Time of delivery</label></td>
+                <td>
+                    <input type="time" id="delivery_time" name="delivery_time" step="1800">
+                    <small>(in 30 min increments)</small>
+                </td>
+            </tr>
+
+            <!-- 10. Color -->
+            <tr>
+                <td><label for="item_color">Color of the item</label></td>
+                <td>
+                    <input type="color" id="item_color" name="item_color" value="#ed1c24">
+                    <small>(default red)</small>
+                </td>
+            </tr>
+
+            <!-- 11. Submit Button -->
+            <tr>
+                <td></td>
+                <td>
+                    <br>
+                    <input type="submit" value="Submit Query">
+                </td>
+            </tr>
+
+            <!-- 12. Search -->
+            <tr>
+                <td><label for="search">Search</label></td>
+                <td>
+                    <input type="search" id="search" name="search">
+                    <input type="button" value="Go">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+/* 1. Thiết lập chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+/* Khung bọc toàn bộ trang */
+.container {
+    width: 850px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+/* 2. Phần Header */
+.header {
+    background-color: #5c8ea6;
+    /* Màu xanh thép */
+    padding: 24px 20px;
+}
+
+.header h1 {
+    font-size: 26px;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+/* 3. Khối thân (Sidebar + Content) */
+.main-body {
+    display: flex;
+    /* Kích hoạt Flexbox để 2 cột luôn bằng chiều cao */
+    min-height: 280px;
+}
+
+/* Cột Sidebar bên trái */
+.sidebar {
+    width: 22%;
+    background-color: #b8cbd5;
+    /* Màu xanh nhạt */
+    padding: 20px 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    color: #2b5b84;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+/* Cột Content bên phải */
+.content {
+    width: 78%;
+    background-color: #edf1f3;
+    /* Màu xám rất nhạt */
+    padding: 25px 30px;
+}
+
+.content h2 {
+    font-size: 22px;
+    color: #111111;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 15px;
+    color: #222222;
+    line-height: 1.5;
+}
+
+/* 4. Phần Footer */
+.footer {
+    background-color: #5c8ea6;
+    padding: 16px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #111111;
+}

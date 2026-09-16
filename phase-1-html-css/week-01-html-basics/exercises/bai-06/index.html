@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6 - Contact Form</title>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <!-- 1. Full Name -->
+        <div style="margin-bottom: 15px;">
+            <label>Full Name <span style="color: red;">*</span></label><br>
+            <div style="display: inline-block; margin-right: 10px;">
+                <input type="text" id="first_name" name="first_name" placeholder="First" required><br>
+            </div>
+            <div style="display: inline-block;">
+                <input type="text" id="last_name" name="last_name" placeholder="Last" required><br>
+            </div>
+        </div>
+
+        <!-- 2. Email -->
+        <div style="margin-bottom: 15px;">
+            <label for="email">Email <span style="color: red;">*</span></label><br>
+            <input type="email" id="email" name="email" required style="width: 320px;">
+        </div>
+
+        <!-- 3. Subject -->
+        <div style="margin-bottom: 15px;">
+            <label for="subject">Subject</label><br>
+            <select id="subject" name="subject" style="width: 328px;">
+                <option value="advertise">Advertise</option>
+                <option value="support">Support</option>
+                <option value="general">General Inquiry</option>
+                <option value="feedback">Feedback</option>
+            </select>
+        </div>
+
+        <!-- 4. Your Message -->
+        <div style="margin-bottom: 15px;">
+            <label for="message">Your Message <span style="color: red;">*</span></label><br>
+            <textarea id="message" name="message" rows="6" cols="42" required></textarea>
+        </div>
+
+        <!-- 5. Submit Button -->
+        <div>
+            <button type="submit"
+                style="background-color: #1c8a77; color: white; border: none; padding: 8px 22px; border-radius: 4px; cursor: pointer; font-size: 14px;">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
