@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+/* Khung layout chính của website */
+.layout-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #588ca4;
+    padding: 24px 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #111111;
+    font-weight: bold;
+}
+
+/* Thân trang: Sidebar bên trái + Content bên phải */
+.main-content {
+    display: flex;
+    min-height: 250px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #b5cbd6;
+    padding: 20px 16px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 6px;
+}
+
+.sidebar ul li a {
+    color: #2e597c;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.content {
+    width: 75%;
+    background-color: #ededed;
+    padding: 25px 30px;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #111111;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    background-color: #588ca4;
+    padding: 14px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #111111;
+}

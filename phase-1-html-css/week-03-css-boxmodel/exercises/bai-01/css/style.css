@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Khung viền hình chữ nhật bao quanh Form */
+.form-container {
+    width: 480px;
+    border: 2px solid #5a9cb5;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+.required {
+    color: #d9534f;
+}
+
+/* Hàng 2 ô First Name & Last Name */
+.name-row {
+    display: flex;
+    gap: 12px;
+}
+
+.name-row .input-wrapper {
+    flex: 1;
+}
+
+/* Styling các thẻ input, select, textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    background-color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888888;
+}
+
+select {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* Trạng thái active/selected của Message (theo mẫu đề bài) */
+.highlight-label {
+    background-color: #3b82f6;
+    color: #ffffff !important;
+    display: inline-block !important;
+    padding: 2px 6px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Nút Submit */
+.btn-submit {
+    background-color: #4b929d;
+    color: #ffffff;
+    border: none;
+    padding: 9px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #39737c;
+}
